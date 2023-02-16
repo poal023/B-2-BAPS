@@ -8,4 +8,4 @@ The `GNURadio/` Directory contains the associated .grc file and the generated Py
 
 `sim/` contains all files related to Python simulation (particularly lock-in detection)
 
-
+Finally, `arduino/` contains all code used to prototype and test designs onto an Arudino board.
