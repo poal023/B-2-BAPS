@@ -282,7 +282,7 @@ class fmcw(gr.top_block, Qt.QWidget):
         self.deci = deci
 
 
-
+#Used for taking command line input arguments
 def argument_parser():
     parser = ArgumentParser()
     return parser
