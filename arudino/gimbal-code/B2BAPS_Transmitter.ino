@@ -8,6 +8,7 @@
 #define BNO055_SAMPLERATE_DELAY_MS (100)
 Adafruit_BNO055 bno = Adafruit_BNO055(55);
 
+//This function sets up the arduino ports to begin the program operation
 void setup() {
   Serial.begin(9600);
   if(!bno.begin()) {
@@ -17,6 +18,7 @@ void setup() {
   //bno.setMode(Adafruit_BNO055::OPERATION_MODE_NDOF);
 }
 
+//This function constantly detects event changes to the gimbal and writes the calculated x, y, z coordinates to the I2C 2x16 LCD display
 void loop() {
   sensors_event_t event;
   bno.getEvent(&event);
