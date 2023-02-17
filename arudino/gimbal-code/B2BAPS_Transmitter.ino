@@ -18,7 +18,8 @@ void setup() {
   //bno.setMode(Adafruit_BNO055::OPERATION_MODE_NDOF);
 }
 
-//This function constantly detects event changes to the gimbal and writes the calculated x, y, z coordinates to the I2C 2x16 LCD display
+//This function constantly detects event changes to the gimbal and writes the calculated x, y, z 
+//axis to the receiver so it could write to the lcd display.
 void loop() {
   sensors_event_t event;
   bno.getEvent(&event);
