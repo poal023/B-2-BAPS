@@ -7,7 +7,7 @@
 
 // LCD object
 LiquidCrystal_I2C lcd(0x27, 20, 4); // i2c address 0x27 and 16x2 display size
-
+//Initializes once and sets up the arduino port being used by the LCD
 void setup() {
   Serial.begin(9600);
     // Initialize LCD
@@ -23,7 +23,7 @@ void setup() {
   lcd.clear();
 
 }
-
+//Constantly reads the changes that occur to the x, y, z axis of the gimbal and prints it on the lcd.
 void loop() {
   while(Serial.available() >= 3) {
     int x = Serial.read();`
