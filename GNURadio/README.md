@@ -4,4 +4,4 @@ The following folder has both the associated `.py` and `.grc` files for the flow
 
 ## Block Diagram
 
-![Image of the Block Diagram](images/gr-flowgraph-updated.png)
+![Image of the Block Diagram](img/gr-flowgraph-updated.png)
